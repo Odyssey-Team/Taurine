@@ -1,0 +1,17 @@
+//
+//  BuildConfigs.xcconfig
+//  Taurine
+//
+//  Created by CoolStar on 3/30/20.
+//  Copyright © 2020 coolstar. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ARCHS = arm64 arm64e
+SWIFT_ACTIVE_COMPILATION_CONDITIONS[config=Debug] = MAINAPP DEBUG
+SWIFT_ACTIVE_COMPILATION_CONDITIONS[config=Release] = MAINAPP
+HEADER_SEARCH_PATHS="$(SRCROOT)/Taurine/post-exploit/include/"
+GCC_PREPROCESSOR_DEFINITIONS[config=Release] = $(inherited) MAINAPP=1 ENABLE_XPC=1 VERSION_COMMIT_COUNT='"Can\'t Stop. Won\'t Stop"' VERSION_COMMIT_SHA='"Here comes a new challenger!"'
+GCC_PREPROCESSOR_DEFINITIONS[config=Debug] = $(inherited) DEBUG=1 MAINAPP=1 ENABLE_XPC=1

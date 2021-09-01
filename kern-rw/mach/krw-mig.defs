@@ -1,0 +1,44 @@
+// mig -sheader krw_daemonServer.h -header krw_daemonUser.h krw-mig.defs
+
+subsystem kernrw_daemon 600;
+userprefix krw_;
+serverprefix krw_;
+
+#include <mach/std_types.defs>
+#include <mach/mach_types.defs>
+
+routine read32(server_port: mach_port_t;
+			in kaddr: uint64_t;
+			out val: uint32_t;
+    serveraudittoken userAudit: audit_token_t);
+
+routine read64(server_port: mach_port_t;
+			in kaddr: uint64_t;
+			out val: uint64_t;
+    serveraudittoken userAudit: audit_token_t);
+
+routine write32(server_port: mach_port_t;
+			in kaddr: uint64_t;
+			in val: uint32_t;
+    serveraudittoken userAudit: audit_token_t);
+
+routine write64(server_port: mach_port_t;
+			in kaddr: uint64_t;
+			in val: uint64_t;
+    serveraudittoken userAudit: audit_token_t);
+
+routine kernelBase(server_port: mach_port_t;
+			out val: uint64_t;
+	serveraudittoken userAudit: audit_token_t);
+
+routine kernelProc(server_port: mach_port_t;
+			out val: uint64_t;
+	serveraudittoken userAudit: audit_token_t);
+
+routine allProc(server_port: mach_port_t;
+			out val: uint64_t;
+	serveraudittoken userAudit: audit_token_t);
+
+routine taskSelfAddr(server_port: mach_port_t;
+			out val: uint64_t;
+	serveraudittoken userAudit: audit_token_t);

@@ -1,0 +1,5 @@
+xcuserdata/
+DerivedData/
+.DS_Store
+build
+SwiftZSTD.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist

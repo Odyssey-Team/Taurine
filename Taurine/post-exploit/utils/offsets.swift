@@ -1,0 +1,218 @@
+//
+//  offsets.swift
+//  Taurine
+//
+//  Created by CoolStar on 3/1/20.
+//  Copyright © 2020 coolstar. All rights reserved.
+//
+
+import Foundation
+
+struct Consts {
+    static let shared = Consts()
+    
+    let TF_PLATFORM = UInt32(0x00000400)
+    
+    let CS_VALID = UInt32(0x00000001)
+    let CS_GET_TASK_ALLOW = UInt32(0x00000004)
+    let CS_INSTALLER = UInt32(0x00000008)
+    
+    let CS_HARD = UInt32(0x00000100)
+    let CS_KILL = UInt32(0x00000200)
+    let CS_RESTRICT = UInt32(0x00000800)
+    
+    let CS_PLATFORM_BINARY = UInt32(0x04000000)
+    let CS_DEBUGGED = UInt32(0x10000000)
+    
+    let P_SUGID = UInt32(0x00000100)
+}
+
+struct DeviceInfo {
+    static let shared = DeviceInfo()
+    let kernelVersion: String
+    
+    init() {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let kernelMirror = Mirror(reflecting: systemInfo.version)
+        let xnuVer = kernelMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        if let match = xnuVer.range(of: "root:xnu-([0-9\\.]+)", options: .regularExpression) {
+            // ok
+            kernelVersion = String(xnuVer[xnuVer.index(match.lowerBound, offsetBy: 9)..<match.upperBound])
+        } else {
+            fatalError("Unexpected kernel version \(xnuVer)")
+        }
+    }
+}
+
+struct Offsets {
+    static let shared = Offsets()
+    public struct PACDiscriminators {
+        let pc = UInt64(0x7481)
+        let lr = UInt64(0x77d3)
+    }
+    let pac = PACDiscriminators()
+    
+    public struct ProcOffsets {
+        let pid = UInt64(0x68)
+        let task = UInt64(0x10)
+        let ucred = UInt64(0xf0)
+        let fd = UInt64(0xf8)
+        
+        let textvp = UInt64(0x220)
+        
+        let name = UInt64(0x240)
+        let csflags = UInt64(0x280)
+    }
+    let proc = ProcOffsets()
+    
+    public struct UcredOffsets {
+        let cr_svuid = UInt64(0x20)
+        let cr_label = UInt64(0x78)
+    }
+    let ucred = UcredOffsets()
+    
+    public struct FiledescOffsets {
+        let ofiles = UInt64(0x0)
+    }
+    let filedesc = FiledescOffsets()
+    
+    public struct FileProcOffsets {
+        let fglob = UInt64(0x10)
+    }
+    let fileproc = FileProcOffsets()
+    
+    public struct FileGlobOffsets {
+        let data = UInt64(0x38)
+    }
+    let fileglob = FileGlobOffsets()
+    
+    public struct PipeOffsets {
+        let buffer = UInt64(0x10)
+    }
+    let pipe = PipeOffsets()
+    
+    public struct TaskOffsets {
+        let ref_count = UInt64(0x10)
+        let active = UInt64(0x14)
+        let message_app_suspended = UInt64(0x1c)
+        let vm_map = UInt64(0x28)
+        
+        let itk_space = UInt64(0x330)
+        
+        let jop_pid = isArm64e() ? UInt64(0x368) : UInt64(0) //only on arm64e
+        
+        let bsd_info = isArm64e() ? UInt64(0x3A0) : UInt64(0x390)
+        let flags =  isArm64e() ? UInt64(0x3F4) : UInt64(0x3D8) //0x54 diff on arm64e, 0x48 diff on arm64
+    }
+    let task = TaskOffsets()
+    
+    public struct IpcPortOffsets {
+        let io_bits = UInt64(0x00)
+        let io_references = UInt64(0x04)
+        let ip_mscount = UInt64(0x9C)
+        let ip_receiver = UInt64(0x60)
+        let ip_srights = UInt64(0xa0)
+        let ip_kobject = UInt64(0x68)
+        let ip_context = UInt64(0x90)
+    }
+    let ipc_port = IpcPortOffsets()
+    
+    public struct IpcSpaceOffsets {
+        let is_table = UInt64(0x20)
+    }
+    let ipc_space = IpcSpaceOffsets()
+    
+    public struct ApfsDataOffsets {
+        let flag = UInt64(0x31)
+    }
+    let apfsData = ApfsDataOffsets()
+    
+    public struct VnodeOffsets {
+        let ncchildren = UInt64(0x30)
+        let flag = UInt64(0x54)
+        let usecount = UInt64(0x60)
+        let type = UInt64(0x70)
+        let id = UInt64(0x74)
+        let ubcinfo = UInt64(0x78)
+        let specinfo = UInt64(0x78)
+        let name = UInt64(0xb8)
+        let parent = UInt64(0xc0)
+        let mount = UInt64(0xd8)
+        let data = UInt64(0xe0)
+    }
+    let vnode = VnodeOffsets()
+    
+    public struct CSBlobOffsets {
+        let csb_cputype = UInt64(0x8)
+        let csb_cpusubtype = UInt64(0xc)
+        let csb_flags = UInt64(0x10)
+        let csb_base_offset = UInt64(0x18)
+        let csb_cdhash = UInt64(0x48)
+        let csb_teamid = UInt64(0x80)
+        let csb_signer_type = UInt64(0x98)
+        let csb_reconstituted = UInt64(0x9C)
+        let csb_platform_binary = UInt64(0xA0)
+    }
+    let csblob = CSBlobOffsets()
+    
+    public struct UbcinfoOffsets {
+        let cs_add_gen = UInt64(0x2c)
+        let csblobs = UInt64(0x50)
+    }
+    let ubcinfo = UbcinfoOffsets()
+    
+    public struct SpecinfoOffsets {
+        let flags = UInt64(0x10)
+    }
+    let specinfo = SpecinfoOffsets()
+    
+    public struct MountOffsets {
+        let mnt_next = UInt64(0x0)
+        let vnodelist = UInt64(0x40)
+        let flag = UInt64(0x70)
+        let data = UInt64(0x8f8)
+        let devvp = UInt64(0x980)
+    }
+    let mount = MountOffsets()
+    
+    public struct NamecacheOffsets {
+        let nc_child = UInt64(0x10)
+        let name = UInt64(0x58)
+        let dvp = UInt64(0x40)
+        let vp = UInt64(0x48)
+    }
+    let namecache = NamecacheOffsets()
+    
+    public struct OsObjOffsets {
+        let os_string_string = UInt64(0x10)
+        let os_string_len = UInt64(0xC)
+        let os_dict_count = UInt64(0x14)
+        let os_dict_dict_entry = UInt64(0x20)
+    }
+    let osobject = OsObjOffsets()
+    
+    public struct NvramOffsets {
+        let sha384_digest_length = 48
+        
+        let ap_nonce_generate_nonce_sel = UInt32(0xC8)
+        let ap_nonce_boot_nonce_os_symbol = UInt64(0xC0)
+        
+        let io_dt_nvram_of_dict: UInt64
+        
+        init() {
+            let kernelVersion = DeviceInfo.shared.kernelVersion
+            if kernelVersion >= "7195.60.69" {
+                io_dt_nvram_of_dict = 0xC8 //14.3 beta 2 -> 14.4.1
+            } else if kernelVersion >= "7195.50.3.201.1" {
+                io_dt_nvram_of_dict = 0xC0 //14.3 beta 1
+            } else {
+                io_dt_nvram_of_dict = 0xB8 //14.0 beta 1 -> 14.2.1
+            }
+        }
+    }
+    let nvram = NvramOffsets()
+}
