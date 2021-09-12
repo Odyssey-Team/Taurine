@@ -1,0 +1,114 @@
+
+/* Class = "UILabel"; text = "Odyssey Team"; ObjectID = "0JX-WD-13L"; */
+"0JX-WD-13L.text" = "Odyssey Team";
+
+/* Class = "UILabel"; text = "Enable Tweaks"; ObjectID = "1cs-wY-Xaa"; */
+"1cs-wY-Xaa.text" = "啟用插件";
+
+/* Class = "UILabel"; text = "Restore RootFS"; ObjectID = "20R-01-wfL"; */
+"20R-01-wfL.text" = "回復RootFS";
+
+/* Class = "UILabel"; text = "Enable Blur"; ObjectID = "2hr-03-JRu"; */
+"2hr-03-JRu.text" = "啟用模糊";
+
+/* Class = "UILabel"; text = "Overwatch"; ObjectID = "4gj-5Y-GYf"; */
+"4gj-5Y-GYf.text" = "鬥陣特攻";
+
+/* Class = "UILabel"; text = "Tech Tips"; ObjectID = "7RQ-lI-Fyl"; */
+"7RQ-lI-Fyl.text" = "科技嘴唇";
+
+/* Class = "UILabel"; text = "Azur Lane"; ObjectID = "A2I-I3-Zp4"; */
+"A2I-I3-Zp4.text" = "碧藍航線";
+
+/* Class = "UITextView"; text = "Log Window Here"; ObjectID = "CQG-gn-Oeq"; */
+"CQG-gn-Oeq.text" = "Log Window Here";
+
+/* Class = "UILabel"; text = "Log Window"; ObjectID = "Goe-t0-Dt2"; */
+"Goe-t0-Dt2.text" = "紀錄視窗";
+
+/* Class = "UILabel"; text = "An update is available at taurine.app"; ObjectID = "HSX-8w-slN"; */
+"HSX-8w-slN.text" = "有可用的更新在taurine.app";
+
+/* Class = "UILabel"; text = "Base Colour"; ObjectID = "HmF-qA-Lce"; */
+"HmF-qA-Lce.text" = "底色";
+
+/* Class = "UILabel"; text = "Diatrus"; ObjectID = "JeY-Lk-JQr"; */
+"JeY-Lk-JQr.text" = "Diatrus";
+
+/* Class = "UILabel"; text = "Default"; ObjectID = "L5k-Iv-LlQ"; */
+"L5k-Iv-LlQ.text" = "預設";
+
+/* Class = "UILabel"; text = "Colour One"; ObjectID = "LJx-Ki-Ehy"; */
+"LJx-Ki-Ehy.text" = "色彩1";
+
+/* Class = "UILabel"; text = "ModernPwner"; ObjectID = "LUe-ij-F6m"; */
+"LUe-ij-F6m.text" = "ModernPwner";
+
+/* Class = "UILabel"; text = "Choose Custom Image"; ObjectID = "NTa-ib-3pR"; */
+"NTa-ib-3pR.text" = "選擇自訂圖像";
+
+/* Class = "UILabel"; text = "CoolStar"; ObjectID = "Qca-rt-aZs"; */
+"Qca-rt-aZs.text" = "CoolStar";
+
+/* Class = "UILabel"; text = "Modify Colour"; ObjectID = "U07-cS-RFC"; */
+"U07-cS-RFC.text" = "調整色彩";
+
+/* Class = "UILabel"; text = "Set Nonce Generator"; ObjectID = "Yna-P5-tbd"; */
+"Yna-P5-tbd.text" = "設定隨機參數產生器";
+
+/* Class = "UILabel"; text = "iOS Updates"; ObjectID = "b8y-5p-wlI"; */
+"b8y-5p-wlI.text" = "iOS更新";
+
+/* Class = "UILabel"; text = "Custom Background"; ObjectID = "byk-Lw-hsL"; */
+"byk-Lw-hsL.text" = "自訂背景";
+
+/* Class = "UILabel"; text = "Colour Two"; ObjectID = "fRh-RG-7l3"; */
+"fRh-RG-7l3.text" = "色彩2";
+
+/* Class = "UILabel"; text = "Sugar Free"; ObjectID = "g6a-dq-uBB"; */
+"g6a-dq-uBB.text" = "無糖";
+
+/* Class = "UILabel"; text = "So Last Year"; ObjectID = "hRr-Ea-tbJ"; */
+"hRr-Ea-tbJ.text" = "去年";
+
+/* Class = "UILabel"; text = "Themes"; ObjectID = "hSF-Kl-Ri2"; */
+"hSF-Kl-Ri2.text" = "主題";
+
+/* Class = "UILabel"; text = "pattern-f"; ObjectID = "hya-0G-eEw"; */
+"hya-0G-eEw.text" = "pattern-f";
+
+/* Class = "UILabel"; text = "Pokémon"; ObjectID = "icA-o3-sxp"; */
+"icA-o3-sxp.text" = "寶可夢";
+
+/* Class = "UILabel"; text = "Join the Discord"; ObjectID = "lk3-Qu-4GP"; */
+"lk3-Qu-4GP.text" = "加入Discord";
+
+/* Class = "UILabel"; text = "Show Memes"; ObjectID = "mln-hN-tea"; */
+"mln-hN-tea.text" = "展示迷因";
+
+/* Class = "UILabel"; text = "League of Legends"; ObjectID = "onj-6H-x2U"; */
+"onj-6H-x2U.text" = "英雄聯盟";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "otu-ph-wYI"; */
+"otu-ph-wYI.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "23 Aaron"; ObjectID = "qfe-8D-SgK"; */
+"qfe-8D-SgK.text" = "23 Aaron";
+
+/* Class = "UILabel"; text = "Amy"; ObjectID = "r2Y-9L-ZqF"; */
+"r2Y-9L-ZqF.text" = "Amy";
+
+/* Class = "UILabel"; text = "Custom Colour"; ObjectID = "t2g-5l-bAg"; */
+"t2g-5l-bAg.text" = "自訂色彩";
+
+/* Class = "UILabel"; text = "Mango Crazy"; ObjectID = "u1t-zd-2uL"; */
+"u1t-zd-2uL.text" = "芒果狂熱";
+
+/* Class = "UILabel"; text = "Credits"; ObjectID = "vSw-Wa-L6G"; */
+"vSw-Wa-L6G.text" = "感謝名單";
+
+/* Class = "UILabel"; text = "tihmstar"; ObjectID = "vTI-q3-RwU"; */
+"vTI-q3-RwU.text" = "tihmstar";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "yCx-0Y-D2W"; */
+"yCx-0Y-D2W.text" = "設定";
