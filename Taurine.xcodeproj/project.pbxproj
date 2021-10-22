@@ -154,8 +154,8 @@
 		8773B95425EA2B1B0025E520 /* KernelRW.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = KernelRW.hpp; sourceTree = "<group>"; };
 		8773B95C25EA2F640025E520 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		8773B96025EA30020025E520 /* libgeneral_exception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libgeneral_exception.cpp; sourceTree = "<group>"; };
+		B58684BB2722F1C500294FB0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		B5EEEA5926EE34A3004D9D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5EEEA6026EE34EC004D9D80 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		E1877E0726A8D376000890AD /* ColourPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourPickerCell.swift; sourceTree = "<group>"; };
 		E1877E0E26A8D432000890AD /* ThemeImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeImagePicker.swift; sourceTree = "<group>"; };
 		F104E091260093FD00214144 /* extractKernel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extractKernel.swift; sourceTree = "<group>"; };
@@ -695,7 +695,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B5EEEA5926EE34A3004D9D80 /* Base */,
-				B5EEEA6026EE34EC004D9D80 /* zh-Hant */,
+				B58684BB2722F1C500294FB0 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
