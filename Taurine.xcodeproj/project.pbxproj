@@ -10,7 +10,6 @@
 		36EC9E9E265B115F00A48A05 /* org.coolstar.sileo_2.1_iphoneos-arm.deb in Resources */ = {isa = PBXBuildFile; fileRef = 366DA963265B0E250061D142 /* org.coolstar.sileo_2.1_iphoneos-arm.deb */; };
 		8722909125D5BC41008E11FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8722909025D5BC41008E11FA /* Assets.xcassets */; };
 		8773B95D25EA2F640025E520 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8773B95C25EA2F640025E520 /* IOKit.framework */; };
-		B5EEEA5826EE34A3004D9D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EEEA5A26EE34A3004D9D80 /* Main.storyboard */; };
 		E1877E0826A8D376000890AD /* ColourPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1877E0726A8D376000890AD /* ColourPickerCell.swift */; };
 		E1877E0F26A8D432000890AD /* ThemeImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1877E0E26A8D432000890AD /* ThemeImagePicker.swift */; };
 		F104E092260093FD00214144 /* extractKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104E091260093FD00214144 /* extractKernel.swift */; };
@@ -22,6 +21,7 @@
 		F15B3CF325F81749002C1D78 /* signcert.p12 in Resources */ = {isa = PBXBuildFile; fileRef = F15B3CF225F81749002C1D78 /* signcert.p12 */; };
 		F15C33AF25EC1E340013351E /* BuildConfigs.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F15C33AE25EC1E330013351E /* BuildConfigs.xcconfig */; };
 		F17BC408260FD58F0014910B /* jailbreak_daemonUser.c in Sources */ = {isa = PBXBuildFile; fileRef = F17BC406260FD58E0014910B /* jailbreak_daemonUser.c */; };
+		F17E74EA25FF2CCD008262A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17E74C925FF2CCC008262A7 /* Main.storyboard */; };
 		F17E750F25FF2DD9008262A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17E750225FF2D0E008262A7 /* LaunchScreen.storyboard */; };
 		F17E751225FF2DF5008262A7 /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = F178161425EC10C1003A2CAF /* patchfinder64.c */; };
 		F17E751425FF2E06008262A7 /* cutils.c in Sources */ = {isa = PBXBuildFile; fileRef = F178161825EC10C8003A2CAF /* cutils.c */; };
@@ -154,8 +154,6 @@
 		8773B95425EA2B1B0025E520 /* KernelRW.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = KernelRW.hpp; sourceTree = "<group>"; };
 		8773B95C25EA2F640025E520 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		8773B96025EA30020025E520 /* libgeneral_exception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libgeneral_exception.cpp; sourceTree = "<group>"; };
-		B58684BB2722F1C500294FB0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		B5EEEA5926EE34A3004D9D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1877E0726A8D376000890AD /* ColourPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourPickerCell.swift; sourceTree = "<group>"; };
 		E1877E0E26A8D432000890AD /* ThemeImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeImagePicker.swift; sourceTree = "<group>"; };
 		F104E091260093FD00214144 /* extractKernel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extractKernel.swift; sourceTree = "<group>"; };
@@ -201,6 +199,7 @@
 		F17E74C625FF2CCC008262A7 /* ProgressFill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressFill.swift; sourceTree = "<group>"; };
 		F17E74C725FF2CCC008262A7 /* ProgressLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressLabel.swift; sourceTree = "<group>"; };
 		F17E74C825FF2CCC008262A7 /* ProgressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
+		F17E74C925FF2CCC008262A7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F17E74CA25FF2CCC008262A7 /* LogStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogStream.swift; sourceTree = "<group>"; };
 		F17E74CB25FF2CCC008262A7 /* AnimatingColourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingColourView.swift; sourceTree = "<group>"; };
 		F17E74CD25FF2CCC008262A7 /* PanelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelButton.swift; sourceTree = "<group>"; };
@@ -414,7 +413,7 @@
 				F17E74CA25FF2CCC008262A7 /* LogStream.swift */,
 				F17E74C425FF2CCC008262A7 /* LogViewController.swift */,
 				F17E754F25FF2FAE008262A7 /* ObjcTryCatch.m */,
-				B5EEEA5A26EE34A3004D9D80 /* Main.storyboard */,
+				F17E74C925FF2CCC008262A7 /* Main.storyboard */,
 				F17E74C325FF2CCC008262A7 /* NonceManager.swift */,
 				F17E74C225FF2CCC008262A7 /* Reachability.swift */,
 				F17E74C025FF2CCC008262A7 /* SceneDelegate.swift */,
@@ -523,7 +522,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hant",
 			);
 			mainGroup = 8722907825D5BC40008E11FA;
 			productRefGroup = 8722908225D5BC40008E11FA /* Products */;
@@ -592,7 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15C33AF25EC1E340013351E /* BuildConfigs.xcconfig in Resources */,
-				B5EEEA5826EE34A3004D9D80 /* Main.storyboard in Resources */,
+				F17E74EA25FF2CCD008262A7 /* Main.storyboard in Resources */,
 				F17E750F25FF2DD9008262A7 /* LaunchScreen.storyboard in Resources */,
 				F15B3CD725F8164B002C1D78 /* tar.gz in Resources */,
 				8722909125D5BC41008E11FA /* Assets.xcassets in Resources */,
@@ -691,15 +689,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		B5EEEA5A26EE34A3004D9D80 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5EEEA5926EE34A3004D9D80 /* Base */,
-				B58684BB2722F1C500294FB0 /* zh-Hant */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F17E750225FF2D0E008262A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -716,7 +705,6 @@
 			baseConfigurationReference = F15C33AE25EC1E330013351E /* BuildConfigs.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -773,7 +761,6 @@
 			baseConfigurationReference = F15C33AE25EC1E330013351E /* BuildConfigs.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
