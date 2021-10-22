@@ -1,0 +1,51 @@
+name: Build
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+   runs-on: macos-11
+   env:
+    THEOS: theos
+   steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: brew install ldid xz
+      - name: Setup Theos
+        uses: actions/checkout@master
+        with:
+          repository: theos/theos
+          ref: 8771215f765e774bfefdacc6ddf0e151c2973d49
+          path: theos
+          submodules: recursive
+      - name: Download SDKs
+        run: |
+          curl -LO https://github.com/SamHep0803/iOS-13-Patched-SDK/archive/master.zip
+          TMP=$(mktemp -d)
+          unzip master.zip -d $TMP
+          mv $TMP/iOS-13-Patched-SDK-master/*.sdk theos/sdks
+          rm -r master.zip $TMP # TODO: it should be
+      - uses: actions/checkout@v2
+      - name: submodules-init
+        uses: snickerbockers/submodules-init@v4
+      - name: Build
+        run: |
+          make -C amfidebilitate clean all
+          cd Taurine/resources && tar -xf basebinaries.tar
+          rm -f Taurine/resources/{amfidebilitate,basebinaries.tar}
+          cd ../..
+          cp amfidebilitate/bin/* Taurine/resources
+          cd Taurine/resources && tar -cf basebinaries.tar amfidebilitate img4tool jailbreakd jbexec launchjailbreak pspawn_payload-stg2.dylib pspawn_payload.dylib
+          rm -f Taurine/resources/{amfidebilitate,img4tool,jailbreakd,jbexec,launchjailbreak,*.dylib}
+          cd ../..
+          xcodebuild clean build ONLY_ACTIVE_ARCH=NO PRODUCT_BUNDLE_IDENTIFIER='com.odysseyteam.taurine' CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO" -sdk iphoneos -scheme Taurine -configuration Release -derivedDataPath build
+          ln -sf build/Build/Products/Release-iphoneos Payload
+          rm -rf Payload/Taurine.app/Frameworks
+          cp -R Payload/Taurine.app/Base.lproj/Main.storyboardc Payload/Taurine.app
+          zip -r9 Taurine.ipa Payload/Taurine.app
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.4
+        with:
+         name: Taurine.ipa
+         path: "Taurine.ipa"
