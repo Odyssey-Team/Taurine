@@ -41,7 +41,6 @@ jobs:
           xcodebuild clean build ONLY_ACTIVE_ARCH=NO PRODUCT_BUNDLE_IDENTIFIER='com.odysseyteam.taurine' CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO" -sdk iphoneos -scheme Taurine -configuration Release -derivedDataPath build
           ln -sf build/Build/Products/Release-iphoneos Payload
           rm -rf Payload/Taurine.app/Frameworks
-          cp -R Payload/Taurine.app/Base.lproj/Main.storyboardc Payload/Taurine.app
           zip -r9 Taurine.ipa Payload/Taurine.app
           
       - name: Upload a Build Artifact
