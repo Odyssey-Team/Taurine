@@ -11,4 +11,4 @@ All A8-A14 devices on iOS 14.0-14.3
 Taurine is licensed under the 4-Clause BSD License
 
 # Build
-Build with makefile should work,requires `THEOS` and `ldid` or use github action 
+Build with makefile requires `ldid` or use github action instead run in local
