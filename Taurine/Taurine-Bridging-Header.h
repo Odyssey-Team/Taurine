@@ -10,10 +10,12 @@
 #include "cutils.h"
 #include "signPAC.h"
 #include "iokit.h"
-#include "patchfinder64.h"
 #import "cicuta_virosa.h"
 #import <xpc/xpc.h>
 #include "jailbreak_daemonUser.h"
+
+#define PROC_PIDPATHINFO_SIZE  (MAXPATHLEN)
+int proc_pidpath(int pid, void * buffer, uint32_t  buffersize);
 
 extern kern_return_t
 bootstrap_look_up(mach_port_t bp, const char *service_name, mach_port_t *sp);

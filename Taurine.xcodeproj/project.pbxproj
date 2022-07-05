@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36EC9E9E265B115F00A48A05 /* org.coolstar.sileo_2.1_iphoneos-arm.deb in Resources */ = {isa = PBXBuildFile; fileRef = 366DA963265B0E250061D142 /* org.coolstar.sileo_2.1_iphoneos-arm.deb */; };
 		8722909125D5BC41008E11FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8722909025D5BC41008E11FA /* Assets.xcassets */; };
 		8773B95D25EA2F640025E520 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8773B95C25EA2F640025E520 /* IOKit.framework */; };
 		E1877E0826A8D376000890AD /* ColourPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1877E0726A8D376000890AD /* ColourPickerCell.swift */; };
@@ -23,7 +22,6 @@
 		F17BC408260FD58F0014910B /* jailbreak_daemonUser.c in Sources */ = {isa = PBXBuildFile; fileRef = F17BC406260FD58E0014910B /* jailbreak_daemonUser.c */; };
 		F17E74EA25FF2CCD008262A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17E74C925FF2CCC008262A7 /* Main.storyboard */; };
 		F17E750F25FF2DD9008262A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17E750225FF2D0E008262A7 /* LaunchScreen.storyboard */; };
-		F17E751225FF2DF5008262A7 /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = F178161425EC10C1003A2CAF /* patchfinder64.c */; };
 		F17E751425FF2E06008262A7 /* cutils.c in Sources */ = {isa = PBXBuildFile; fileRef = F178161825EC10C8003A2CAF /* cutils.c */; };
 		F17E751525FF2E06008262A7 /* swiftUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17815FF25EC0FB8003A2CAF /* swiftUtil.swift */; };
 		F17E751625FF2E06008262A7 /* offsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17815FC25EC0FA4003A2CAF /* offsets.swift */; };
@@ -76,6 +74,11 @@
 		F17E754B25FF2E6C008262A7 /* UIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E74C125FF2CCC008262A7 /* UIApplication+Window.swift */; };
 		F17E754C25FF2E6C008262A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E74BF25FF2CCB008262A7 /* ViewController.swift */; };
 		F17E755025FF2FAE008262A7 /* ObjcTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = F17E754F25FF2FAE008262A7 /* ObjcTryCatch.m */; };
+		F1B78BBB27ED3FC600152952 /* ASN1Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BB927ED3FC600152952 /* ASN1Parser.swift */; };
+		F1B78BBC27ED3FC600152952 /* ASN1Parser+IM4P.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BBA27ED3FC600152952 /* ASN1Parser+IM4P.swift */; };
+		F1B78BBE27ED400A00152952 /* kernelPatchfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BBD27ED400A00152952 /* kernelPatchfinder.swift */; };
+		F1B78BEF27ED67FA00152952 /* LZSSDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BE927ED67F900152952 /* LZSSDecoder.swift */; };
+		F1FCE8EA27BFAC1800A199A2 /* org.coolstar.sileo_2.3_iphoneos-arm.deb in Resources */ = {isa = PBXBuildFile; fileRef = F1FCE8E927BFAC1800A199A2 /* org.coolstar.sileo_2.3_iphoneos-arm.deb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,7 +134,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		366DA963265B0E250061D142 /* org.coolstar.sileo_2.1_iphoneos-arm.deb */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "org.coolstar.sileo_2.1_iphoneos-arm.deb"; sourceTree = "<group>"; };
 		8722908125D5BC40008E11FA /* Taurine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taurine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8722909025D5BC41008E11FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8722909325D5BC41008E11FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -159,10 +161,8 @@
 		F104E091260093FD00214144 /* extractKernel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extractKernel.swift; sourceTree = "<group>"; };
 		F10E698E25ECC56D00394109 /* SwiftZSTD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftZSTD.xcodeproj; path = external/SwiftZSTD/SwiftZSTD.xcodeproj; sourceTree = "<group>"; };
 		F10E69D925EDC06B00394109 /* entitleMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entitleMe.swift; sourceTree = "<group>"; };
-		F1211825260C733C0060B3DA /* kexecute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kexecute.swift; sourceTree = "<group>"; };
 		F154ECE025F022140062FDF3 /* signPAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signPAC.h; sourceTree = "<group>"; };
 		F154ECE125F022140062FDF3 /* signPAC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = signPAC.c; sourceTree = "<group>"; };
-		F156B48C260D5ED30006A88C /* sethsp4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sethsp4.swift; sourceTree = "<group>"; };
 		F15B3CC825F564CA002C1D78 /* iokit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iokit.h; path = include/iokit.h; sourceTree = "<group>"; };
 		F15B3CD225F8162E002C1D78 /* basebinaries.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = basebinaries.tar; sourceTree = "<group>"; };
 		F15B3CD525F8164A002C1D78 /* tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = tar.gz; sourceTree = "<group>"; };
@@ -183,8 +183,6 @@
 		F178160925EC1080003A2CAF /* kernSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kernSlide.swift; sourceTree = "<group>"; };
 		F178160A25EC1080003A2CAF /* vnodeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vnodeUtil.swift; sourceTree = "<group>"; };
 		F178160B25EC1080003A2CAF /* amfidtakeover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amfidtakeover.swift; sourceTree = "<group>"; };
-		F178161325EC10C1003A2CAF /* patchfinder64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = patchfinder64.h; sourceTree = "<group>"; };
-		F178161425EC10C1003A2CAF /* patchfinder64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = patchfinder64.c; sourceTree = "<group>"; };
 		F178161725EC10C8003A2CAF /* cutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cutils.h; sourceTree = "<group>"; };
 		F178161825EC10C8003A2CAF /* cutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cutils.c; sourceTree = "<group>"; };
 		F178161F25EC11F5003A2CAF /* bootstrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bootstrap.swift; sourceTree = "<group>"; };
@@ -221,6 +219,11 @@
 		F17E750625FF2D62008262A7 /* ThemesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesManager.swift; sourceTree = "<group>"; };
 		F17E750725FF2D62008262A7 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F17E754F25FF2FAE008262A7 /* ObjcTryCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcTryCatch.m; sourceTree = "<group>"; };
+		F1B78BB927ED3FC600152952 /* ASN1Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1Parser.swift; sourceTree = "<group>"; };
+		F1B78BBA27ED3FC600152952 /* ASN1Parser+IM4P.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASN1Parser+IM4P.swift"; sourceTree = "<group>"; };
+		F1B78BBD27ED400A00152952 /* kernelPatchfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kernelPatchfinder.swift; sourceTree = "<group>"; };
+		F1B78BE927ED67F900152952 /* LZSSDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZSSDecoder.swift; sourceTree = "<group>"; };
+		F1FCE8E927BFAC1800A199A2 /* org.coolstar.sileo_2.3_iphoneos-arm.deb */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "org.coolstar.sileo_2.3_iphoneos-arm.deb"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,8 +326,8 @@
 			children = (
 				F15B3CD225F8162E002C1D78 /* basebinaries.tar */,
 				F15B3CE825F81719002C1D78 /* bootstrap.tar.gz */,
-				366DA963265B0E250061D142 /* org.coolstar.sileo_2.1_iphoneos-arm.deb */,
 				F15B3CDA25F81661002C1D78 /* essential_0-4_iphoneos-arm.deb */,
+				F1FCE8E927BFAC1800A199A2 /* org.coolstar.sileo_2.3_iphoneos-arm.deb */,
 				F15B3CF225F81749002C1D78 /* signcert.p12 */,
 				F15B3CD525F8164A002C1D78 /* tar.gz */,
 				F15B3CD625F8164B002C1D78 /* uicache.gz */,
@@ -332,20 +335,9 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
-		F156B485260D5EB60006A88C /* kexec */ = {
-			isa = PBXGroup;
-			children = (
-				F1211825260C733C0060B3DA /* kexecute.swift */,
-				F156B48C260D5ED30006A88C /* sethsp4.swift */,
-			);
-			path = kexec;
-			sourceTree = "<group>";
-		};
 		F17815F125EC0E4B003A2CAF /* post-exploit */ = {
 			isa = PBXGroup;
 			children = (
-				F178161425EC10C1003A2CAF /* patchfinder64.c */,
-				F178161325EC10C1003A2CAF /* patchfinder64.h */,
 				F178161825EC10C8003A2CAF /* cutils.c */,
 				F178161725EC10C8003A2CAF /* cutils.h */,
 				F15B3CC825F564CA002C1D78 /* iokit.h */,
@@ -359,8 +351,8 @@
 		F17815F825EC0F6E003A2CAF /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				F1B78BB327ED3FB900152952 /* asn1 */,
 				F17BC400260FD5810014910B /* handoff-jbd */,
-				F156B485260D5EB60006A88C /* kexec */,
 				F17815FF25EC0FB8003A2CAF /* swiftUtil.swift */,
 				F17815FC25EC0FA4003A2CAF /* offsets.swift */,
 				F17815F925EC0F80003A2CAF /* remount.swift */,
@@ -374,6 +366,7 @@
 				F154ECE025F022140062FDF3 /* signPAC.h */,
 				F154ECE125F022140062FDF3 /* signPAC.c */,
 				F104E091260093FD00214144 /* extractKernel.swift */,
+				F1B78BBD27ED400A00152952 /* kernelPatchfinder.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -478,6 +471,16 @@
 				E1877E0E26A8D432000890AD /* ThemeImagePicker.swift */,
 			);
 			path = ThemesManager;
+			sourceTree = "<group>";
+		};
+		F1B78BB327ED3FB900152952 /* asn1 */ = {
+			isa = PBXGroup;
+			children = (
+				F1B78BB927ED3FC600152952 /* ASN1Parser.swift */,
+				F1B78BBA27ED3FC600152952 /* ASN1Parser+IM4P.swift */,
+				F1B78BE927ED67F900152952 /* LZSSDecoder.swift */,
+			);
+			path = asn1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -598,8 +601,8 @@
 				F15B3CD825F8164B002C1D78 /* uicache.gz in Resources */,
 				F15B3CE925F81719002C1D78 /* bootstrap.tar.gz in Resources */,
 				F15B3CE025F8166C002C1D78 /* essential_0-4_iphoneos-arm.deb in Resources */,
+				F1FCE8EA27BFAC1800A199A2 /* org.coolstar.sileo_2.3_iphoneos-arm.deb in Resources */,
 				F15B3CF325F81749002C1D78 /* signcert.p12 in Resources */,
-				36EC9E9E265B115F00A48A05 /* org.coolstar.sileo_2.1_iphoneos-arm.deb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,11 +619,11 @@
 				F17E752625FF2E13008262A7 /* exploit_utilities.c in Sources */,
 				F17E752725FF2E13008262A7 /* fake_element_spray.c in Sources */,
 				F17E752825FF2E13008262A7 /* voucher_utils.c in Sources */,
-				F17E751225FF2DF5008262A7 /* patchfinder64.c in Sources */,
 				F17E751425FF2E06008262A7 /* cutils.c in Sources */,
 				F17E751525FF2E06008262A7 /* swiftUtil.swift in Sources */,
 				F17E751625FF2E06008262A7 /* offsets.swift in Sources */,
 				F17E751725FF2E06008262A7 /* remount.swift in Sources */,
+				F1B78BBE27ED400A00152952 /* kernelPatchfinder.swift in Sources */,
 				E1877E0826A8D376000890AD /* ColourPickerCell.swift in Sources */,
 				F17E751825FF2E06008262A7 /* nvram.swift in Sources */,
 				F17E751925FF2E06008262A7 /* amfidtakeover.swift in Sources */,
@@ -629,8 +632,10 @@
 				F17E751C25FF2E06008262A7 /* bootstrapUtils.swift in Sources */,
 				F17E751D25FF2E06008262A7 /* vnodeUtil.swift in Sources */,
 				F17E751E25FF2E06008262A7 /* entitleMe.swift in Sources */,
+				F1B78BBC27ED3FC600152952 /* ASN1Parser+IM4P.swift in Sources */,
 				F17E751F25FF2E06008262A7 /* signPAC.c in Sources */,
 				F17E752025FF2E06008262A7 /* electra.swift in Sources */,
+				F1B78BBB27ED3FC600152952 /* ASN1Parser.swift in Sources */,
 				F17E752125FF2E06008262A7 /* bootstrap.swift in Sources */,
 				F17BC408260FD58F0014910B /* jailbreak_daemonUser.c in Sources */,
 				F17E752A25FF2E22008262A7 /* KernelRW.cpp in Sources */,
@@ -658,6 +663,7 @@
 				F17E754325FF2E6C008262A7 /* AppDelegate.swift in Sources */,
 				F17E754425FF2E6C008262A7 /* AppVersionManager.swift in Sources */,
 				F17E754525FF2E6C008262A7 /* BackgroundView.swift in Sources */,
+				F1B78BEF27ED67FA00152952 /* LZSSDecoder.swift in Sources */,
 				F17E754625FF2E6C008262A7 /* LogStream.swift in Sources */,
 				F17E754725FF2E6C008262A7 /* LogViewController.swift in Sources */,
 				F17E755025FF2FAE008262A7 /* ObjcTryCatch.m in Sources */,
@@ -819,7 +825,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TCM49M8P5K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Taurine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -830,7 +836,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Taurine/resources",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = org.coolstar.taurine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -849,7 +855,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TCM49M8P5K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Taurine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -860,7 +866,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Taurine/resources",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = org.coolstar.taurine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
