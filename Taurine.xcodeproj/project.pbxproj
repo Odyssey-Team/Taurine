@@ -78,6 +78,7 @@
 		F18579F22A92E386004AD2CD /* ExploitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18579F12A92E386004AD2CD /* ExploitManager.swift */; };
 		F18579F42A92E3D1004AD2CD /* Exploit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18579F32A92E3D1004AD2CD /* Exploit.swift */; };
 		F18579F62A92ED0C004AD2CD /* ExploitSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18579F52A92ED0C004AD2CD /* ExploitSelectionButton.swift */; };
+		F18579FC2A92FDFE004AD2CD /* ctbypass.gz in Resources */ = {isa = PBXBuildFile; fileRef = F18579FB2A92FDFE004AD2CD /* ctbypass.gz */; };
 		F1B78BBB27ED3FC600152952 /* ASN1Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BB927ED3FC600152952 /* ASN1Parser.swift */; };
 		F1B78BBC27ED3FC600152952 /* ASN1Parser+IM4P.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BBA27ED3FC600152952 /* ASN1Parser+IM4P.swift */; };
 		F1B78BBE27ED400A00152952 /* kernelPatchfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BBD27ED400A00152952 /* kernelPatchfinder.swift */; };
@@ -267,6 +268,7 @@
 		F18579F12A92E386004AD2CD /* ExploitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitManager.swift; sourceTree = "<group>"; };
 		F18579F32A92E3D1004AD2CD /* Exploit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exploit.swift; sourceTree = "<group>"; };
 		F18579F52A92ED0C004AD2CD /* ExploitSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitSelectionButton.swift; sourceTree = "<group>"; };
+		F18579FB2A92FDFE004AD2CD /* ctbypass.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = ctbypass.gz; sourceTree = "<group>"; };
 		F1B78BB927ED3FC600152952 /* ASN1Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1Parser.swift; sourceTree = "<group>"; };
 		F1B78BBA27ED3FC600152952 /* ASN1Parser+IM4P.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASN1Parser+IM4P.swift"; sourceTree = "<group>"; };
 		F1B78BBD27ED400A00152952 /* kernelPatchfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kernelPatchfinder.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 			children = (
 				F15B3CD225F8162E002C1D78 /* basebinaries.tar */,
 				F15B3CE825F81719002C1D78 /* bootstrap.tar.gz */,
+				F18579FB2A92FDFE004AD2CD /* ctbypass.gz */,
 				F15B3CDA25F81661002C1D78 /* essential_0-4_iphoneos-arm.deb */,
 				F1FCE8E927BFAC1800A199A2 /* org.coolstar.sileo_2.3_iphoneos-arm.deb */,
 				F15B3CF225F81749002C1D78 /* signcert.p12 */,
@@ -767,6 +770,7 @@
 				F15C33AF25EC1E340013351E /* BuildConfigs.xcconfig in Resources */,
 				F17E74EA25FF2CCD008262A7 /* Main.storyboard in Resources */,
 				F17E750F25FF2DD9008262A7 /* LaunchScreen.storyboard in Resources */,
+				F18579FC2A92FDFE004AD2CD /* ctbypass.gz in Resources */,
 				F15B3CD725F8164B002C1D78 /* tar.gz in Resources */,
 				8722909125D5BC41008E11FA /* Assets.xcassets in Resources */,
 				F15B3CD325F8162E002C1D78 /* basebinaries.tar in Resources */,

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>com.odysseyteam.ctbypass</string>
+	<key>com.apple.developer.team-identifier</key>
+	<string>odysseyteam</string>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>com.odysseyteam.*</string>
+	</array>
+	<key>platform-application</key>
+	<true/>
+	<key>com.apple.private.security.container-required</key>
+	<false/>
+	<key>com.apple.private.security.no-sandbox</key>
+	<false/>
+	<key>com.apple.private.security.disk-device-access</key>
+	<true/>
+	<key>com.apple.private.vfs.snapshot</key>
+	<true/>
+	<key>com.apple.private.apfs.revert-to-snapshot</key>
+	<true/>
+	<key>task_for_pid-allow</key>
+	<true/>
+	<key>com.apple.security.exception.iokit-user-client-class</key>
+	<array>
+		<string>AppleMobileApNonceUserClient</string>
+		<string>AppleSEPUserClient</string>
+		<string>AppleSEPManager</string>
+	</array>
+</dict>
+</plist>
