@@ -74,6 +74,10 @@
 		F17E754B25FF2E6C008262A7 /* UIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E74C125FF2CCC008262A7 /* UIApplication+Window.swift */; };
 		F17E754C25FF2E6C008262A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E74BF25FF2CCB008262A7 /* ViewController.swift */; };
 		F17E755025FF2FAE008262A7 /* ObjcTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = F17E754F25FF2FAE008262A7 /* ObjcTryCatch.m */; };
+		F18579BA2A92D98B004AD2CD /* kfd_krw.m in Sources */ = {isa = PBXBuildFile; fileRef = F18579B82A92D98B004AD2CD /* kfd_krw.m */; settings = {COMPILER_FLAGS = "-Wno-unused"; }; };
+		F18579F22A92E386004AD2CD /* ExploitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18579F12A92E386004AD2CD /* ExploitManager.swift */; };
+		F18579F42A92E3D1004AD2CD /* Exploit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18579F32A92E3D1004AD2CD /* Exploit.swift */; };
+		F18579F62A92ED0C004AD2CD /* ExploitSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18579F52A92ED0C004AD2CD /* ExploitSelectionButton.swift */; };
 		F1B78BBB27ED3FC600152952 /* ASN1Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BB927ED3FC600152952 /* ASN1Parser.swift */; };
 		F1B78BBC27ED3FC600152952 /* ASN1Parser+IM4P.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BBA27ED3FC600152952 /* ASN1Parser+IM4P.swift */; };
 		F1B78BBE27ED400A00152952 /* kernelPatchfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B78BBD27ED400A00152952 /* kernelPatchfinder.swift */; };
@@ -219,6 +223,50 @@
 		F17E750625FF2D62008262A7 /* ThemesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesManager.swift; sourceTree = "<group>"; };
 		F17E750725FF2D62008262A7 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F17E754F25FF2FAE008262A7 /* ObjcTryCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcTryCatch.m; sourceTree = "<group>"; };
+		F18579B82A92D98B004AD2CD /* kfd_krw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kfd_krw.m; sourceTree = "<group>"; };
+		F18579B92A92D98B004AD2CD /* kfd_krw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kfd_krw.h; sourceTree = "<group>"; };
+		F18579BC2A92DA9D004AD2CD /* krkw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krkw.h; sourceTree = "<group>"; };
+		F18579BF2A92DA9D004AD2CD /* kread_sem_open.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kread_sem_open.h; sourceTree = "<group>"; };
+		F18579C02A92DA9D004AD2CD /* kread_IOSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kread_IOSurface.h; sourceTree = "<group>"; };
+		F18579C12A92DA9D004AD2CD /* kread_kqueue_workloop_ctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kread_kqueue_workloop_ctl.h; sourceTree = "<group>"; };
+		F18579C22A92DA9D004AD2CD /* IOSurface_shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurface_shared.h; sourceTree = "<group>"; };
+		F18579C42A92DA9D004AD2CD /* kwrite_IOSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kwrite_IOSurface.h; sourceTree = "<group>"; };
+		F18579C52A92DA9D004AD2CD /* kwrite_sem_open.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kwrite_sem_open.h; sourceTree = "<group>"; };
+		F18579C62A92DA9D004AD2CD /* kwrite_dup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kwrite_dup.h; sourceTree = "<group>"; };
+		F18579C92A92DA9D004AD2CD /* semaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = semaphore.h; sourceTree = "<group>"; };
+		F18579CA2A92DA9D004AD2CD /* ipc_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipc_port.h; sourceTree = "<group>"; };
+		F18579CB2A92DA9D004AD2CD /* fileglob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileglob.h; sourceTree = "<group>"; };
+		F18579CC2A92DA9D004AD2CD /* miscellaneous_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miscellaneous_types.h; sourceTree = "<group>"; };
+		F18579CD2A92DA9D004AD2CD /* ipc_space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipc_space.h; sourceTree = "<group>"; };
+		F18579CE2A92DA9D004AD2CD /* vm_map_copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_map_copy.h; sourceTree = "<group>"; };
+		F18579CF2A92DA9D004AD2CD /* pseminfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pseminfo.h; sourceTree = "<group>"; };
+		F18579D02A92DA9D004AD2CD /* vm_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_object.h; sourceTree = "<group>"; };
+		F18579D12A92DA9D004AD2CD /* pmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmap.h; sourceTree = "<group>"; };
+		F18579D22A92DA9D004AD2CD /* fileops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileops.h; sourceTree = "<group>"; };
+		F18579D32A92DA9D004AD2CD /* fileproc_guard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileproc_guard.h; sourceTree = "<group>"; };
+		F18579D42A92DA9D004AD2CD /* ipc_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipc_entry.h; sourceTree = "<group>"; };
+		F18579D52A92DA9D004AD2CD /* vm_named_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_named_entry.h; sourceTree = "<group>"; };
+		F18579D62A92DA9D004AD2CD /* psemnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psemnode.h; sourceTree = "<group>"; };
+		F18579D72A92DA9D004AD2CD /* vm_page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_page.h; sourceTree = "<group>"; };
+		F18579D82A92DA9D004AD2CD /* vm_map_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_map_entry.h; sourceTree = "<group>"; };
+		F18579D92A92DA9D004AD2CD /* fileproc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileproc.h; sourceTree = "<group>"; };
+		F18579DB2A92DA9D004AD2CD /* task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = task.h; sourceTree = "<group>"; };
+		F18579DC2A92DA9D004AD2CD /* proc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proc.h; sourceTree = "<group>"; };
+		F18579DD2A92DA9D004AD2CD /* uthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uthread.h; sourceTree = "<group>"; };
+		F18579DE2A92DA9D004AD2CD /* vm_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_map.h; sourceTree = "<group>"; };
+		F18579DF2A92DA9D004AD2CD /* IOSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurface.h; sourceTree = "<group>"; };
+		F18579E02A92DA9D004AD2CD /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		F18579E12A92DA9D004AD2CD /* kqworkloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kqworkloop.h; sourceTree = "<group>"; };
+		F18579E22A92DA9D004AD2CD /* puaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puaf.h; sourceTree = "<group>"; };
+		F18579E32A92DA9D004AD2CD /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		F18579E52A92DA9D004AD2CD /* smith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smith.h; sourceTree = "<group>"; };
+		F18579E62A92DA9D004AD2CD /* physpuppet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = physpuppet.h; sourceTree = "<group>"; };
+		F18579E72A92DA9D004AD2CD /* perf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perf.h; sourceTree = "<group>"; };
+		F18579E82A92DA9D004AD2CD /* info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = info.h; sourceTree = "<group>"; };
+		F18579E92A92DA9D004AD2CD /* libkfd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libkfd.h; sourceTree = "<group>"; };
+		F18579F12A92E386004AD2CD /* ExploitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitManager.swift; sourceTree = "<group>"; };
+		F18579F32A92E3D1004AD2CD /* Exploit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exploit.swift; sourceTree = "<group>"; };
+		F18579F52A92ED0C004AD2CD /* ExploitSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitSelectionButton.swift; sourceTree = "<group>"; };
 		F1B78BB927ED3FC600152952 /* ASN1Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1Parser.swift; sourceTree = "<group>"; };
 		F1B78BBA27ED3FC600152952 /* ASN1Parser+IM4P.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASN1Parser+IM4P.swift"; sourceTree = "<group>"; };
 		F1B78BBD27ED400A00152952 /* kernelPatchfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kernelPatchfinder.swift; sourceTree = "<group>"; };
@@ -376,6 +424,7 @@
 			children = (
 				F17AE28925F2CAC700EFDD80 /* common */,
 				8722909E25D5BC5A008E11FA /* cicuta_virosa */,
+				F18579B72A92D970004AD2CD /* kfd */,
 			);
 			path = exploit;
 			sourceTree = "<group>";
@@ -395,6 +444,7 @@
 		F17AE29225F2D5A400EFDD80 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				F18579EB2A92E37B004AD2CD /* ExploitManager */,
 				F17E74C525FF2CCC008262A7 /* ProgressButton */,
 				F17E750425FF2D62008262A7 /* ThemesManager */,
 				F17E74CC25FF2CCC008262A7 /* Panels */,
@@ -471,6 +521,128 @@
 				E1877E0E26A8D432000890AD /* ThemeImagePicker.swift */,
 			);
 			path = ThemesManager;
+			sourceTree = "<group>";
+		};
+		F18579B72A92D970004AD2CD /* kfd */ = {
+			isa = PBXGroup;
+			children = (
+				F18579BB2A92DA9D004AD2CD /* libkfd */,
+				F18579E92A92DA9D004AD2CD /* libkfd.h */,
+				F18579B92A92D98B004AD2CD /* kfd_krw.h */,
+				F18579B82A92D98B004AD2CD /* kfd_krw.m */,
+			);
+			path = kfd;
+			sourceTree = "<group>";
+		};
+		F18579BB2A92DA9D004AD2CD /* libkfd */ = {
+			isa = PBXGroup;
+			children = (
+				F18579BC2A92DA9D004AD2CD /* krkw.h */,
+				F18579BD2A92DA9D004AD2CD /* krkw */,
+				F18579C72A92DA9D004AD2CD /* info */,
+				F18579E22A92DA9D004AD2CD /* puaf.h */,
+				F18579E32A92DA9D004AD2CD /* common.h */,
+				F18579E42A92DA9D004AD2CD /* puaf */,
+				F18579E72A92DA9D004AD2CD /* perf.h */,
+				F18579E82A92DA9D004AD2CD /* info.h */,
+			);
+			path = libkfd;
+			sourceTree = "<group>";
+		};
+		F18579BD2A92DA9D004AD2CD /* krkw */ = {
+			isa = PBXGroup;
+			children = (
+				F18579BE2A92DA9D004AD2CD /* kread */,
+				F18579C22A92DA9D004AD2CD /* IOSurface_shared.h */,
+				F18579C32A92DA9D004AD2CD /* kwrite */,
+			);
+			path = krkw;
+			sourceTree = "<group>";
+		};
+		F18579BE2A92DA9D004AD2CD /* kread */ = {
+			isa = PBXGroup;
+			children = (
+				F18579BF2A92DA9D004AD2CD /* kread_sem_open.h */,
+				F18579C02A92DA9D004AD2CD /* kread_IOSurface.h */,
+				F18579C12A92DA9D004AD2CD /* kread_kqueue_workloop_ctl.h */,
+			);
+			path = kread;
+			sourceTree = "<group>";
+		};
+		F18579C32A92DA9D004AD2CD /* kwrite */ = {
+			isa = PBXGroup;
+			children = (
+				F18579C42A92DA9D004AD2CD /* kwrite_IOSurface.h */,
+				F18579C52A92DA9D004AD2CD /* kwrite_sem_open.h */,
+				F18579C62A92DA9D004AD2CD /* kwrite_dup.h */,
+			);
+			path = kwrite;
+			sourceTree = "<group>";
+		};
+		F18579C72A92DA9D004AD2CD /* info */ = {
+			isa = PBXGroup;
+			children = (
+				F18579C82A92DA9D004AD2CD /* static_types */,
+				F18579DA2A92DA9D004AD2CD /* dynamic_types */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		F18579C82A92DA9D004AD2CD /* static_types */ = {
+			isa = PBXGroup;
+			children = (
+				F18579C92A92DA9D004AD2CD /* semaphore.h */,
+				F18579CA2A92DA9D004AD2CD /* ipc_port.h */,
+				F18579CB2A92DA9D004AD2CD /* fileglob.h */,
+				F18579CC2A92DA9D004AD2CD /* miscellaneous_types.h */,
+				F18579CD2A92DA9D004AD2CD /* ipc_space.h */,
+				F18579CE2A92DA9D004AD2CD /* vm_map_copy.h */,
+				F18579CF2A92DA9D004AD2CD /* pseminfo.h */,
+				F18579D02A92DA9D004AD2CD /* vm_object.h */,
+				F18579D12A92DA9D004AD2CD /* pmap.h */,
+				F18579D22A92DA9D004AD2CD /* fileops.h */,
+				F18579D32A92DA9D004AD2CD /* fileproc_guard.h */,
+				F18579D42A92DA9D004AD2CD /* ipc_entry.h */,
+				F18579D52A92DA9D004AD2CD /* vm_named_entry.h */,
+				F18579D62A92DA9D004AD2CD /* psemnode.h */,
+				F18579D72A92DA9D004AD2CD /* vm_page.h */,
+				F18579D82A92DA9D004AD2CD /* vm_map_entry.h */,
+				F18579D92A92DA9D004AD2CD /* fileproc.h */,
+			);
+			path = static_types;
+			sourceTree = "<group>";
+		};
+		F18579DA2A92DA9D004AD2CD /* dynamic_types */ = {
+			isa = PBXGroup;
+			children = (
+				F18579DB2A92DA9D004AD2CD /* task.h */,
+				F18579DC2A92DA9D004AD2CD /* proc.h */,
+				F18579DD2A92DA9D004AD2CD /* uthread.h */,
+				F18579DE2A92DA9D004AD2CD /* vm_map.h */,
+				F18579DF2A92DA9D004AD2CD /* IOSurface.h */,
+				F18579E02A92DA9D004AD2CD /* thread.h */,
+				F18579E12A92DA9D004AD2CD /* kqworkloop.h */,
+			);
+			path = dynamic_types;
+			sourceTree = "<group>";
+		};
+		F18579E42A92DA9D004AD2CD /* puaf */ = {
+			isa = PBXGroup;
+			children = (
+				F18579E52A92DA9D004AD2CD /* smith.h */,
+				F18579E62A92DA9D004AD2CD /* physpuppet.h */,
+			);
+			path = puaf;
+			sourceTree = "<group>";
+		};
+		F18579EB2A92E37B004AD2CD /* ExploitManager */ = {
+			isa = PBXGroup;
+			children = (
+				F18579F12A92E386004AD2CD /* ExploitManager.swift */,
+				F18579F32A92E3D1004AD2CD /* Exploit.swift */,
+				F18579F52A92ED0C004AD2CD /* ExploitSelectionButton.swift */,
+			);
+			path = ExploitManager;
 			sourceTree = "<group>";
 		};
 		F1B78BB327ED3FB900152952 /* asn1 */ = {
@@ -620,9 +792,12 @@
 				F17E752725FF2E13008262A7 /* fake_element_spray.c in Sources */,
 				F17E752825FF2E13008262A7 /* voucher_utils.c in Sources */,
 				F17E751425FF2E06008262A7 /* cutils.c in Sources */,
+				F18579F42A92E3D1004AD2CD /* Exploit.swift in Sources */,
+				F18579F22A92E386004AD2CD /* ExploitManager.swift in Sources */,
 				F17E751525FF2E06008262A7 /* swiftUtil.swift in Sources */,
 				F17E751625FF2E06008262A7 /* offsets.swift in Sources */,
 				F17E751725FF2E06008262A7 /* remount.swift in Sources */,
+				F18579BA2A92D98B004AD2CD /* kfd_krw.m in Sources */,
 				F1B78BBE27ED400A00152952 /* kernelPatchfinder.swift in Sources */,
 				E1877E0826A8D376000890AD /* ColourPickerCell.swift in Sources */,
 				F17E751825FF2E06008262A7 /* nvram.swift in Sources */,
@@ -672,6 +847,7 @@
 				F104E092260093FD00214144 /* extractKernel.swift in Sources */,
 				F17E754A25FF2E6C008262A7 /* SceneDelegate.swift in Sources */,
 				F17E754B25FF2E6C008262A7 /* UIApplication+Window.swift in Sources */,
+				F18579F62A92ED0C004AD2CD /* ExploitSelectionButton.swift in Sources */,
 				F17E754C25FF2E6C008262A7 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

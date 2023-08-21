@@ -9,8 +9,8 @@
 import UIKit
 
 class SelectionButton: TableButton {
-    @IBInspectable private var defaultsKey: String = ""
-    @IBInspectable private var defaultsValue: String = ""
+    @IBInspectable var defaultsKey: String = ""
+    @IBInspectable var defaultsValue: String = ""
     @IBInspectable private var notificationName: String = ""
     
     @IBOutlet private var checkmarkImage: UIImageView!
