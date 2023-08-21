@@ -57,7 +57,7 @@ class ViewController: UIViewController, ElectraUI {
         
         jailbreakButton?.setTitle("Jailbreak", for: .normal)
         
-        if #available(iOS 14.4, *) {
+        if ExploitManager.shared.chosenExploit == .nullExploit {
             jailbreakButton?.isEnabled = false
             jailbreakButton?.setTitle("Unsupported", for: .normal)
         }
@@ -249,19 +249,32 @@ class ViewController: UIViewController, ElectraUI {
                     return
                 }
                 
-                if #available(iOS 14.4, *) {
-                    fatalError("Unable to get kernel r/w")
-                }
-                
                 var hasKernelRw = false
                 var any_proc = UInt64(0)
                 
-                if #available(iOS 14, *){
+                switch ExploitManager.shared.chosenExploit {
+                case .cicutaVirosa:
                     print("Selecting cicuta_virosa for iOS 14.0 - 14.3")
                     if cicuta_virosa() == 0 {
                         any_proc = our_proc_kAddr
                         hasKernelRw = true
                     }
+                case .kfdPhysPuppet:
+                    print("Selecting kfd [physpuppet] for iOS 14.0 - 14.8.1")
+                    if do_kopen(0x800, 0x0, 0x2, 0x2) != 0 {
+                        print("Successfully exploited kernel!");
+                        any_proc = our_proc_kAddr
+                        hasKernelRw = true
+                    }
+                case .kfdSmith:
+                    print("Selecting kfd [smith] for iOS 14.0 - 14.8.1")
+                    if do_kopen(0x800, 0x1, 0x2, 0x2) != 0 {
+                        print("Successfully exploited kernel!");
+                        any_proc = our_proc_kAddr
+                        hasKernelRw = true
+                    }
+                default:
+                    fatalError("Unable to get kernel r/w")
                 }
                 guard hasKernelRw else {
                     DispatchQueue.main.async {
