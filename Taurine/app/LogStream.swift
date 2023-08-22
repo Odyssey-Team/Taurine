@@ -159,4 +159,14 @@ class LogStream {
         outputSource.resume()
         errorSource.resume()
     }
+    
+    func pause(){
+        outputSource.suspend()
+        errorSource.suspend()
+    }
+    
+    func resume(){
+        outputSource.resume()
+        errorSource.resume()
+    }
 }
