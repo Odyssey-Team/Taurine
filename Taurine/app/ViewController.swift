@@ -261,14 +261,20 @@ class ViewController: UIViewController, ElectraUI {
                     }
                 case .kfdPhysPuppet:
                     print("Selecting kfd [physpuppet] for iOS 14.0 - 14.8.1")
-                    if do_kopen(0x800, 0x0, 0x2, 0x2) != 0 {
+                    LogStream.shared.pause()
+                    let ret = do_kopen(0x800, 0x0, 0x2, 0x2)
+                    LogStream.shared.resume()
+                    if ret != 0 {
                         print("Successfully exploited kernel!");
                         any_proc = our_proc_kAddr
                         hasKernelRw = true
                     }
                 case .kfdSmith:
                     print("Selecting kfd [smith] for iOS 14.0 - 14.8.1")
-                    if do_kopen(0x800, 0x1, 0x2, 0x2) != 0 {
+                    LogStream.shared.pause()
+                    let ret = do_kopen(0x800, 0x1, 0x2, 0x2)
+                    LogStream.shared.resume()
+                    if ret != 0 {
                         print("Successfully exploited kernel!");
                         any_proc = our_proc_kAddr
                         hasKernelRw = true
