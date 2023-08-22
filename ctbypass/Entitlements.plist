@@ -16,11 +16,7 @@
 	<false/>
 	<key>com.apple.private.security.no-sandbox</key>
 	<false/>
-	<key>com.apple.private.security.disk-device-access</key>
-	<true/>
-	<key>com.apple.private.vfs.snapshot</key>
-	<true/>
-	<key>com.apple.private.apfs.revert-to-snapshot</key>
+	<key>com.apple.system-task-ports.control</key>
 	<true/>
 	<key>task_for_pid-allow</key>
 	<true/>
