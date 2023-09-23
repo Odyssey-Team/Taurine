@@ -305,7 +305,7 @@ class ViewController: UIViewController, ElectraUI {
                 DispatchQueue.main.async {
                     self.jailbreakButton.setProgress(1.0, animated: true)
                     if err != .ERR_NOERR {
-                        self.showAlert("Oh no", "\(String(describing: err))", sync: false, callback: {
+                        self.showAlert("Error occured", err.description, sync: false, callback: {
                             UIApplication.shared.beginBackgroundTask {
                                 print("odd. this should never be called.")
                             }
